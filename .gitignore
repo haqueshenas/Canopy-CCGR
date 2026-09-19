@@ -32,3 +32,6 @@ htmlcov/
 # OS files
 Thumbs.db
 .DS_Store
+
+# Local / built executables
+*.exe
