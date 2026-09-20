@@ -12,14 +12,38 @@
   Version 1.0.0 · Windows executable available
 </p>
 
+<p align="center">
+  <a href="https://doi.org/10.5281/zenodo.22854125">
+    <img src="https://zenodo.org/badge/155868073.svg" alt="DOI">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/haqueshenas/Canopy-CCGR/releases/latest/download/CanopyCCGR.exe">
+    <strong>⬇ Download Canopy CCGR for Windows</strong>
+  </a>
+</p>
+
+<p align="center">
+  <sub>No Python installation is required to use the Windows executable.</sub>
+</p>
+
+<p align="center">
+  <a href="https://github.com/haqueshenas/Canopy-CCGR/releases/tag/v1.0.0">View release v1.0.0</a>
+  ·
+  <a href="https://doi.org/10.5281/zenodo.22854125">Zenodo DOI</a>
+</p>
 
 **Abbas Haghshenas**
 
 Easy Phenotyping Lab (EPL)
 
-[https://haqueshenas.github.io/EPL](https://haqueshenas.github.io/EPL)
+https://haqueshenas.github.io/EPL
 
 [haqueshenas@gmail.com](mailto:haqueshenas@gmail.com)
+
+---
+
 
 ---
 
