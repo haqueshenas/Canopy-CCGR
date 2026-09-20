@@ -1,8 +1,17 @@
-# Canopy CCGR for Python
+<p align="center">
+  <img src="assets/CanopyCCGR_Logo.png" alt="Canopy CCGR Logo" width="180">
+</p>
 
-**Version 1.0.0**
+<h1 align="center">Canopy CCGR for Python</h1>
 
-**A practical image-analysis tool for quantitative canopy coverage and canopy greenness**
+<p align="center">
+  A practical image-analysis tool for quantitative canopy coverage and canopy greenness
+</p>
+
+<p align="center">
+  Version 1.0.0 · Windows executable available
+</p>
+
 
 **Abbas Haghshenas**
 
