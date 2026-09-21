@@ -529,6 +529,15 @@ Researchers should therefore try to keep the following conditions consistent whe
 
 The software analyzes the image that it receives. It does not automatically know whether a change in image-derived greenness is caused by plant biology, illumination, camera settings, shadow, background effects, or another factor.
 
+### Sample data
+
+Five raw field images are included in the `Data/Sample_Data/` directory so that users can test Canopy CCGR with real crop imagery without needing to obtain their own images first.
+
+These images are a small subset of the larger “Diverse Canopy of Wheat Cultivar Mixtures” dataset, which contains 1676 images from two growing seasons.
+
+Complete dataset:
+https://doi.org/10.5281/zenodo.10694706
+
 ---
 
 ## 16. Selecting the input and output folders
