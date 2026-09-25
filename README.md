@@ -25,8 +25,19 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/haqueshenas/Canopy-CCGR/releases/download/v1.0.0/Demo_CCGR.mp4">
+    <strong>▶ View the Canopy CCGR Demo</strong>
+  </a>
+</p>
+
+<p align="center">
+  <sub>24-second visual demonstration · MP4 · 32 MB</sub>
+</p>
+
+<p align="center">
   <sub>No Python installation is required to use the Windows executable.</sub>
 </p>
+
 
 <p align="center">
   <a href="https://github.com/haqueshenas/Canopy-CCGR/releases/tag/v1.0.0">View release v1.0.0</a>
