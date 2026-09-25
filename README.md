@@ -78,6 +78,7 @@ You are free to **share, copy, redistribute, remix, transform, and build upon th
 
 The CC BY 4.0 license applies to the Demo Video only. The Canopy CCGR software and source-code materials remain licensed separately under the **MIT License** stated in this repository's `LICENSE` file.
 
+---
 
 
 ## From the MATLAB Canopy CCGR capsule to a Python-based application
