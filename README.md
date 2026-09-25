@@ -58,6 +58,27 @@ https://haqueshenas.github.io/EPL
 
 ---
 
+## Demo
+
+A short visual demonstration of the Canopy CCGR concept is available in the v1.0.0 release:
+
+[**▶ View the Canopy CCGR Demo**](https://github.com/haqueshenas/Canopy-CCGR/releases/download/v1.0.0/Demo_CCGR.mp4)
+
+The Demo is an educational visualization and is not part of the scientific analysis application.
+
+### Demo Video License
+
+**Copyright (c) 2026 Abbas Haghshenas. All rights reserved.**
+
+The `Demo_CCGR.mp4` video is a separate copyrighted work and is **not covered by the MIT License** applicable to the Canopy CCGR software in this repository.
+
+The Demo Video may be viewed and accessed through the official Canopy CCGR repository and release links. No permission is granted to copy, modify, edit, remix, adapt, redistribute, repost, re-upload, sell, sublicense, or create derivative works from the Demo Video, in whole or in part, without prior written permission from Abbas Haghshenas.
+
+Any permitted reference, quotation, or use must retain clear attribution to **Abbas Haghshenas / Easy Phenotyping Lab (EPL)** and must link to the official Canopy CCGR repository or the official release whenever reasonably possible.
+
+The MIT License applies to the Canopy CCGR software and associated source-code materials as stated in the repository `LICENSE` file. **It does not apply to the Demo Video.**
+
+
 ## From the MATLAB Canopy CCGR capsule to a Python-based application
 
 Canopy CCGR for Python v1.0.0 is the **Python reimplementation and extension of the Canopy CCGR computational workflow previously shared on Code Ocean as the MATLAB Version 2 capsule**:
