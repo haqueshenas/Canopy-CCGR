@@ -68,15 +68,16 @@ The Demo is an educational visualization and is not part of the scientific analy
 
 ### Demo Video License
 
-**Copyright (c) 2026 Abbas Haghshenas. All rights reserved.**
+**Copyright (c) 2026 Abbas Haghshenas**
 
-The `Demo_CCGR.mp4` video is a separate copyrighted work and is **not covered by the MIT License** applicable to the Canopy CCGR software in this repository.
+The `Demo_CCGR.mp4` video is released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
 
-The Demo Video may be viewed and accessed through the official Canopy CCGR repository and release links. No permission is granted to copy, modify, edit, remix, adapt, redistribute, repost, re-upload, sell, sublicense, or create derivative works from the Demo Video, in whole or in part, without prior written permission from Abbas Haghshenas.
+You are free to **share, copy, redistribute, remix, transform, and build upon the video**, including for commercial purposes, provided that appropriate credit is given to **Abbas Haghshenas / Easy Phenotyping Lab (EPL)** and a link to the license is provided.
 
-Any permitted reference, quotation, or use must retain clear attribution to **Abbas Haghshenas / Easy Phenotyping Lab (EPL)** and must link to the official Canopy CCGR repository or the official release whenever reasonably possible.
+[**Creative Commons Attribution 4.0 International (CC BY 4.0)**](https://creativecommons.org/licenses/by/4.0/)
 
-The MIT License applies to the Canopy CCGR software and associated source-code materials as stated in the repository `LICENSE` file. **It does not apply to the Demo Video.**
+The CC BY 4.0 license applies to the Demo Video only. The Canopy CCGR software and source-code materials remain licensed separately under the **MIT License** stated in this repository's `LICENSE` file.
+
 
 
 ## From the MATLAB Canopy CCGR capsule to a Python-based application
