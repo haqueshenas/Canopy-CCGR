@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  Version 1.0.0 · Windows executable available
+  Version 1.0.0 · Windows application package available
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/haqueshenas/Canopy-CCGR/releases/latest/download/CanopyCCGR.exe">
+  <a href="https://github.com/haqueshenas/Canopy-CCGR/releases/latest/download/CanopyCCGR.zip">
     <strong>⬇ Download Canopy CCGR for Windows</strong>
   </a>
 </p>
@@ -35,7 +35,11 @@
 </p>
 
 <p align="center">
-  <sub>No Python installation is required to use the Windows executable.</sub>
+  <sub>No Python installation is required to use the Windows application.</sub>
+</p>
+
+<p align="center">
+  <sub>Download the ZIP package, extract the complete <code>CanopyCCGR</code> folder, and run <code>CanopyCCGR.exe</code> from inside that folder. Do not move the executable outside the folder. You may create a desktop shortcut to the executable after extraction.</sub>
 </p>
 
 
@@ -97,7 +101,11 @@ The historical development can be summarized as:
 
 **MATLAB Canopy CCGR v1 -> MATLAB Canopy CCGR v2 -> Canopy CCGR for Python v1.0.0**
 
-The Python version also extends the original workflow with a graphical user interface, live segmentation preview, multiple segmentation methods, configurable HSV segmentation, user-defined Custom segmentation, improved visualization, vector graph export, and a Windows one-file executable.
+The Python version also
+extends the original workflow with a graphical user interface, live
+segmentation preview, multiple segmentation methods, configurable HSV
+segmentation, user-defined Custom segmentation, improved visualization, vector
+graph export, and a standalone Windows application package.
 
 ---
 
@@ -852,7 +860,7 @@ A Custom segmentation file is part of the scientific configuration of the analys
 
 **No - not for ordinary use.**
 
-The easiest way to use Canopy CCGR for Python on Windows is the packaged executable.
+The easiest way to use Canopy CCGR for Python on Windows is the standalone Windows application package.
 
 A researcher can:
 
