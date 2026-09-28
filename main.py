@@ -13,52 +13,154 @@ haqueshenas@gmail.com
 
 Development note
 
-The software concept, scientific design, methodological decisions,
-project direction, and overall development were led by Abbas Haghshenas;
-the Python code was developed with coding assistance from OpenAI's
-GPT-5.6 Luna.
+The software concept, scientific design, methodological
+decisions, project direction, and overall development
+were led by Abbas Haghshenas; the Python code was
+developed with coding assistance from OpenAI's GPT-5.6 Luna.
 
 Copyright (c) 2026 Abbas Haghshenas
 License: MIT
 """
 
 import sys
+from pathlib import Path
 
-from PySide6.QtCore import QTimer
-from PySide6.QtWidgets import QApplication
+from PySide6.QtCore import Qt
+from PySide6.QtGui import QIcon, QPixmap
+from PySide6.QtWidgets import (
+    QApplication,
+    QSplashScreen,
+)
 
 from gui import CanopyGUI
 
 
-# PyInstaller provides this module only when the application
-# is packaged with a PyInstaller splash screen.
-try:
-    import pyi_splash
-except ImportError:
-    pyi_splash = None
-
-
-def close_splash():
+def resource_path(filename):
     """
-    Close the PyInstaller splash screen, if it is active.
+    Return the path to a bundled application resource.
+
+    Works both when running from source and when running
+    from a PyInstaller onedir package.
     """
-    if pyi_splash is not None:
-        try:
-            if pyi_splash.is_alive():
-                pyi_splash.close()
-        except Exception:
-            pass
+
+    return (
+        Path(__file__).resolve().parent
+        /
+        filename
+    )
 
 
 def main():
-    app = QApplication(sys.argv)
+
+    app = QApplication(
+        sys.argv
+    )
+
+    # --------------------------------------------------------
+    # Application icon
+    # --------------------------------------------------------
+
+    icon_path = resource_path(
+        "CanopyCCGR.ico"
+    )
+
+    if icon_path.exists():
+
+        app.setWindowIcon(
+            QIcon(
+                str(icon_path)
+            )
+        )
+
+    # --------------------------------------------------------
+    # Startup splash
+    # --------------------------------------------------------
+
+    splash = None
+
+    splash_path = resource_path(
+        "CanopyCCGR.png"
+    )
+
+    if splash_path.exists():
+
+        pixmap = QPixmap(
+            str(splash_path)
+        )
+
+        # Keep the splash reasonably sized on all Windows
+        # display resolutions while preserving its aspect ratio.
+
+        screen = app.primaryScreen()
+
+        if screen is not None:
+
+            available = (
+                screen.availableGeometry()
+            )
+
+            max_width = min(
+                420,
+                int(
+                    available.width()
+                    * 0.40
+                )
+            )
+
+            max_height = min(
+                280,
+                int(
+                    available.height()
+                    * 0.40
+                )
+            )
+
+            pixmap = pixmap.scaled(
+                max_width,
+                max_height,
+                Qt.KeepAspectRatio,
+                Qt.SmoothTransformation
+            )
+
+        splash = QSplashScreen(
+            pixmap
+        )
+
+        splash.setWindowFlags(
+            Qt.WindowStaysOnTopHint
+            |
+            Qt.FramelessWindowHint
+        )
+
+        splash.show()
+
+        app.processEvents()
+
+    # --------------------------------------------------------
+    # Create the actual GUI
+    # --------------------------------------------------------
 
     window = CanopyGUI()
+
     window.show()
 
-    # Give Qt a brief opportunity to create and paint the main window,
-    # then close the PyInstaller splash screen.
-    QTimer.singleShot(150, close_splash)
+    app.processEvents()
+
+    # --------------------------------------------------------
+    # Close splash after GUI is visible
+    # --------------------------------------------------------
+
+    if splash is not None:
+
+        splash.finish(
+            window
+        )
+
+        app.processEvents()
+
+    # --------------------------------------------------------
+    # Start Qt event loop
+    # --------------------------------------------------------
 
     sys.exit(
         app.exec()
@@ -66,4 +168,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
